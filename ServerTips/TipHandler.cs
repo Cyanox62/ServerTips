@@ -13,7 +13,18 @@ namespace ServerTips
 			Random rand = new Random();
 			Dictionary<int, string> timerDict = new Dictionary<int, string>();
 
-			foreach (string timer in config.Split(','))
+			string splitter = plugin.GetConfigString("servertips_splitter");
+			char spl;
+			if (!char.TryParse(splitter, out char a ))
+			{
+				plugin.Info("Error! Splitter is not a character.");
+			}
+			else
+			{
+				spl = a;
+			}
+
+			foreach (string timer in config.Split(a))
 			{
 				string[] str = timer.Split(':');
 				if (str.Length > 0)

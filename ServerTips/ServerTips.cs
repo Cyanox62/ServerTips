@@ -25,6 +25,7 @@ namespace ServerTips
 		{
 			this.AddEventHandlers(new EventHandler(this));
 			this.AddConfig(new Smod2.Config.ConfigSetting("servertips", "", Smod2.Config.SettingType.STRING, true, ""));
+			this.AddConfig(new Smod2.Config.ConfigSetting("servertips_splitter", "-", Smod2.Config.SettingType.STRING, true, ""));
 		}
 	}
 }
