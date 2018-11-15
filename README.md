@@ -14,4 +14,5 @@ Put this config line anywhere in your gameplay_config.txt file with the proper f
 
 | Config        | Value Type | Default | Description |
 | :-------------: | :---------: | :---------: |:------ |
-| servertips | List | | Sets the messages to be printed to each users console. They are in the format `[color]:[message]:[min_time]:[max_time]` and are seperated by commas. The times are calculated in seconds and represent the amount of time into the round. Example config: `yellow:Join our discord server!:10:30,gray:Hope you enjoy the server!:50:100`
+| servertips | List | | Sets the messages to be printed to each users console. They are in the format `[color]:[message]:[min_time]:[max_time]` and are seperated by commas. The times are calculated in seconds and represent the amount of time into the round. Example config: `yellow:Join our discord server!:10:30-gray:Hope you enjoy the server!:50:100`
+| servertips_splitter | Character | - | Sets the character to seperate messages.
